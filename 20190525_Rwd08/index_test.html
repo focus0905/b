@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    /* 1製作一個寬高100px的方塊
+       2從左邊移動到距離左邊300px的位置
+       3然後再往下300px
+       4最後回到原點
+       5無美播放
+       6動畫長度5秒
+    */
+div{
+        /* 1 */
+        width:100px;
+        height: 100px;
+        background-color: blueviolet;
+        position:relative;
+        animation-name:move_square;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        
+}
+
+@keyframes move_square{
+         0%{
+            left:0px;
+            top:0px;
+         }
+         33%{
+            left:300px;
+            top:0px;
+         }
+         66%{
+            left:300px;
+            top:300px;
+         }
+         100%{
+            left:0px;
+            top:0px;
+         }
+     }
+
+</style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "微軟正黑體","Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+.navbar{
+    border-width:5px !important;    
+}
+
+.carousel-item{
+    height: 500px;
+}
+.carousel-caption{
+    background: rgba(0,0,0,0.5);
+}
+.pic_h300{
+    height: 300px;
+    overflow: hidden;
+}
+
+@media (max-width: 576px) { 
+    .carousel-item{
+        height: 250px;
+    }
+ }
+
+@media (min-width: 576px) { 
+    .carousel-item{
+        height: 250px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .carousel-item{
+        height: 400px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .carousel-item{
+        height: 500px;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .carousel-item{
+        height: 500px;
+    }
+ }
+
+/* 平版以下的裝置  手機 */
+@media(max-width:768px){
+
+    .myimg{
+        order:1;
+    }
+    .myytext{
+        order:2;
+    }
+}
+
+#jb1{
+background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/Geography_03.jpg);
+background-attachment: fixed;
+background-position: center;
+background-size:cover;
+background-repeat: no-repeat;
+height: calc(100vh - 63px);
+margin-bottom:0px;
+color:white;
+}
+.card-img-top{
+    height: 200px;
+    object-fit:cover;
+}
+.card-body{
+  height: 160px;
+  overflow:auto;
+   
+}
+
+.abcd:hover{
+    animation: pulse 3s;
+}

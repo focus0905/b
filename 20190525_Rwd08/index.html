@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <style>
+     #mydiv{
+         width:100px;
+         height: 100px;
+         background-color:red;
+         /* 動畫名稱 */
+         animation-name: divsquare;
+         /* 動畫長度 */
+         animation-duration: 3s;
+         /* 動畫延遲 */
+         animation-delay:1s; 
+         /* 播放次數 */
+         animation-iteration-count:infinite;  
+         /* 播放方向 
+            normal 一般
+            reverse 反向
+            alternate 播過去播回來
+            alternate-reverse 播回來播過去
+         */
+         animation-direction:alternate-reverse;
+         /* 播放速度
+            linear 線性
+            ease-in 慢慢開始
+            ease-out 慢慢結束
+            ease 開始結束都變慢
+          */
+          animation-timing-function: linear;
+     }
+     @keyframes divsquare{
+         0%{
+             width:100px;
+             height: 100px;;
+         }
+         50%{
+             background-color: aqua;
+         }
+         100%{
+             width:300px;
+             height: 300px;;
+         }
+     }
+     </style>
+</head>
+<body>
+    <div id="mydiv">
+       
+    </div>
+</body>
+</html>
